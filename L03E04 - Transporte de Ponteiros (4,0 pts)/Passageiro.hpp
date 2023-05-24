@@ -15,6 +15,8 @@ public:
     ~Passageiro();
     void descontar_valor_passagem(float valor_passagem);
     float get_saldo();
+    std::string get_nome();
+    int get_idade();
 };
 
 #endif

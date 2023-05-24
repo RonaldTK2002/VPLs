@@ -7,6 +7,15 @@ void Passageiro::descontar_valor_passagem(float valor_passagem)
 {
     this->_saldo_passagem -= valor_passagem;
 }
-float Passageiro::get_saldo(){
-    return this->get_saldo();
+float Passageiro::get_saldo()
+{
+    return this->_saldo_passagem;
+}
+std::string Passageiro::get_nome()
+{
+    return _nome;
+}
+int Passageiro::get_idade()
+{
+    return _idade;
 }
