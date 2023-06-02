@@ -13,7 +13,7 @@ Metro::~Metro()
 bool Metro::pagar_passagem(std::shared_ptr<Passageiro> passageiro)
 {
     bool tem_vagas = (this->_capacidade) > (this->_passageiros.size());
-    bool tem_dinheiro = (passageiro->get_saldo()) > (this->_valor_passagem)+0.40;
+    bool tem_dinheiro = (passageiro->get_saldo()) > (this->_valor_passagem) + 0.40;
     if (tem_vagas && tem_dinheiro)
     {
         passageiro->descontar_valor_passagem(this->_valor_passagem + 0.40);
@@ -38,4 +38,9 @@ void Metro::desembarcar()
         numero_desembarcados++;
     }
     std::cout << numero_desembarcados << " passageiros desembarcaram do metro\n";
+}
+void Metro::embarcar(std::shared_ptr<Passageiro> passageiro)
+{
+    if (passageiro->get_saldo() > (this->_valor_passagem + 0.40))
+        Trem::embarcar(passageiro);
 }

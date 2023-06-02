@@ -33,12 +33,13 @@ bool Trem::pagar_passagem(std::shared_ptr<Passageiro> passageiro)
 }
 void Trem::mover()
 {
-    float porcentagem_ocupacao =  (_passageiros.size() / float(_capacidade)) * 100;
-    std::cout << "Deslocando com " << std::fixed << std::setprecision(0)<< porcentagem_ocupacao << "% da capacidade\n";
+    float porcentagem_ocupacao = (_passageiros.size() / float(_capacidade)) * 100;
+    std::cout << "Deslocando com " << std::fixed << std::setprecision(0) << porcentagem_ocupacao << "% da capacidade\n";
 }
 void Trem::embarcar(std::shared_ptr<Passageiro> passageiro)
 {
-    if (pagar_passagem(passageiro)&&(_capacidade > _passageiros.size()))
+
+    if (pagar_passagem(passageiro))
         _passageiros.push_back(passageiro);
 }
 void Trem::desembarcar()

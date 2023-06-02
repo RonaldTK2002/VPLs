@@ -1,0 +1,19 @@
+Filme ficcao 2010 148 A Origem
+Nota 1 9
+Nota 1 8
+Filme ficcao 1999 136 Matrix
+Nota 2 8
+Filme suspense 1999 139 Clube da Luta
+Nota 3 9
+Filme terror 1980 144 O Iluminado
+Nota 4 7
+Nota 4 8
+Serie drama 2008 5 62 Breaking Bad
+Nota 5 9
+Nota 5 10
+Serie comedia 2005 9 201 The Office
+Nota 6 9
+Serie ficcao 2011 5 22 Black Mirror
+Nota 7 8
+Serie drama 2015 4 25 Mr. Robot
+Nota 8 8
