@@ -11,10 +11,13 @@ class Filme : public Video
 {
 
 private:
-    int duracao;
+    int _duracao;
 
 public:
+    Filme(std::string nome, int ano, std::string genero,int duracao);
+    ~Filme();
     virtual void print_info() override;
+    int get_duracao();
 };
 
 #endif
